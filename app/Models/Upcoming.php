@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Upcoming extends Model
 {
+    protected $table = 'upcomings';
     use HasFactory;
     protected $fillable = ['title','completed','approved','waiting','taskId'];
 }
